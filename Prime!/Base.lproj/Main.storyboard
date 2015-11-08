@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prime_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="numbers-shutterstock" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-gV-ihw">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="720" id="0no-NY-yax"/>
+                                    <constraint firstAttribute="width" constant="600" id="FoQ-ez-L2L"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifS-I2-yc8">
+                                <rect key="frame" x="252" y="60" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="ien-uR-E88"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-xz-eNa">
+                                <rect key="frame" x="20" y="100" width="560" height="480"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGo-JE-rvc">
+                                <rect key="frame" x="225" y="30" width="150" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="kgN-ee-c0H"/>
+                                </constraints>
+                                <state key="normal" title="Find Primes Upto:">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="CalulateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6O-DB-JDp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qJf-xz-eNa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="JdD-TC-7Cu"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qJf-xz-eNa" secondAttribute="leading" id="Keb-vC-jKz"/>
+                            <constraint firstItem="ifS-I2-yc8" firstAttribute="top" secondItem="yGo-JE-rvc" secondAttribute="bottom" id="PWK-jT-U7u"/>
+                            <constraint firstItem="yGo-JE-rvc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="ZpV-lm-AnC"/>
+                            <constraint firstItem="ifS-I2-yc8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bWy-zU-Utg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qJf-xz-eNa" secondAttribute="bottom" constant="20" id="hC7-a5-2KA"/>
+                            <constraint firstItem="yGo-JE-rvc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jWh-Z4-rQd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qJf-xz-eNa" secondAttribute="trailing" id="pZo-aV-bu8"/>
+                            <constraint firstItem="qJf-xz-eNa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sAy-3a-7H3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CalculateButtonItem" destination="yGo-JE-rvc" id="yDI-Wm-a44"/>
+                        <outlet property="MainTextView" destination="qJf-xz-eNa" id="CKQ-xL-40h"/>
+                        <outlet property="rangeTextField" destination="ifS-I2-yc8" id="Zq3-Mq-F1p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="683"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="numbers-shutterstock" width="833" height="833"/>
+    </resources>
+</document>
