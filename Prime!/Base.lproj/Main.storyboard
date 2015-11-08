@@ -22,27 +22,28 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-xz-eNa">
-                                <rect key="frame" x="20" y="100" width="560" height="480"/>
+                                <rect key="frame" x="20" y="120" width="560" height="460"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifS-I2-yc8">
-                                <rect key="frame" x="252" y="60" width="97" height="30"/>
+                                <rect key="frame" x="252" y="78" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="ien-uR-E88"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGo-JE-rvc">
-                                <rect key="frame" x="225" y="30" width="150" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGo-JE-rvc">
+                                <rect key="frame" x="175" y="28" width="251" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="kgN-ee-c0H"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="kgN-ee-c0H"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Find Primes Upto:">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -56,7 +57,7 @@
                         <constraints>
                             <constraint firstItem="E2B-gV-ihw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BXI-CB-CLR"/>
                             <constraint firstAttribute="trailing" secondItem="E2B-gV-ihw" secondAttribute="trailing" id="Buf-t5-q1B"/>
-                            <constraint firstItem="qJf-xz-eNa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="JdD-TC-7Cu"/>
+                            <constraint firstItem="qJf-xz-eNa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="120" id="JdD-TC-7Cu"/>
                             <constraint firstAttribute="leadingMargin" secondItem="qJf-xz-eNa" secondAttribute="leading" id="Keb-vC-jKz"/>
                             <constraint firstItem="ifS-I2-yc8" firstAttribute="top" secondItem="yGo-JE-rvc" secondAttribute="bottom" id="PWK-jT-U7u"/>
                             <constraint firstItem="yGo-JE-rvc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="ZpV-lm-AnC"/>
