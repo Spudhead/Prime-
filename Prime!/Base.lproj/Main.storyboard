@@ -18,13 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="numbers-shutterstock" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-gV-ihw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="numbers-shutterstock" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-gV-ihw">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="720" id="0no-NY-yax"/>
-                                    <constraint firstAttribute="width" constant="600" id="FoQ-ez-L2L"/>
-                                </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-xz-eNa">
+                                <rect key="frame" x="20" y="100" width="560" height="480"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifS-I2-yc8">
                                 <rect key="frame" x="252" y="60" width="97" height="30"/>
                                 <constraints>
@@ -33,13 +36,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-xz-eNa">
-                                <rect key="frame" x="20" y="100" width="560" height="480"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGo-JE-rvc">
                                 <rect key="frame" x="225" y="30" width="150" height="30"/>
                                 <animations/>
@@ -58,14 +54,19 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="E2B-gV-ihw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BXI-CB-CLR"/>
+                            <constraint firstAttribute="trailing" secondItem="E2B-gV-ihw" secondAttribute="trailing" id="Buf-t5-q1B"/>
                             <constraint firstItem="qJf-xz-eNa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="100" id="JdD-TC-7Cu"/>
                             <constraint firstAttribute="leadingMargin" secondItem="qJf-xz-eNa" secondAttribute="leading" id="Keb-vC-jKz"/>
                             <constraint firstItem="ifS-I2-yc8" firstAttribute="top" secondItem="yGo-JE-rvc" secondAttribute="bottom" id="PWK-jT-U7u"/>
                             <constraint firstItem="yGo-JE-rvc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="ZpV-lm-AnC"/>
                             <constraint firstItem="ifS-I2-yc8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bWy-zU-Utg"/>
+                            <constraint firstAttribute="trailing" secondItem="E2B-gV-ihw" secondAttribute="trailing" id="dI1-g6-hlp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qJf-xz-eNa" secondAttribute="bottom" constant="20" id="hC7-a5-2KA"/>
                             <constraint firstItem="yGo-JE-rvc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jWh-Z4-rQd"/>
+                            <constraint firstItem="E2B-gV-ihw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="lXX-yF-Nsl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qJf-xz-eNa" secondAttribute="trailing" id="pZo-aV-bu8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E2B-gV-ihw" secondAttribute="bottom" id="qZg-Ua-4WP"/>
                             <constraint firstItem="qJf-xz-eNa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sAy-3a-7H3"/>
                         </constraints>
                     </view>
