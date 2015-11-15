@@ -30,30 +30,24 @@ class ViewController: UIViewController {
         let range = (rangeTextField.text)
         MainTextView.text = ""
         while number < Int(range!) {
-         number++
-            if number == 1 {
+            number++
+            
+            //set the flag to true initially
+            var prime = true
+            
+            for var i = 2; i <= number / 2 ; i += 1 {
                 
-                print(number)
-                
-            } else {
-                
-                //set the flag to true initially
-                var prime = true
-                
-                for var i = 2; i <= number / 2 ; i += 1 {
-                    
-                    //even division of a number thats not 1 or the number itself = not a prime number
-                    if number % i == 0 {
-                        prime = false
-                        break
-                    }
+                //even division of a number thats not 1 or the number itself = not a prime number
+                if number % i == 0 {
+                    prime = false
+                    break
                 }
+            }
+            
+            if prime == true {
+                print(number, terminator: " ")
+                MainTextView.text = MainTextView.text + "\(number) "
                 
-                if prime == true {
-                    print(number, terminator: " ")
-                    MainTextView.text = MainTextView.text + "\(number) "
-                    
-                }
             }
         }
     }
