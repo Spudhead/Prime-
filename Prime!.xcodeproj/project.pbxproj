@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8931834A1BF855220088D084 /* HowManyPrimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893183491BF855220088D084 /* HowManyPrimesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8931834C1BF859CF0088D084 /* HowManyFibonacciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931834B1BF859CF0088D084 /* HowManyFibonacciViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8965F3251BDE0FBB000E62E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F3241BDE0FBB000E62E6 /* AppDelegate.swift */; };
 		8965F3271BDE0FBB000E62E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F3261BDE0FBB000E62E6 /* ViewController.swift */; };
 		8965F32A1BDE0FBB000E62E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8965F3281BDE0FBB000E62E6 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		893183491BF855220088D084 /* HowManyPrimesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowManyPrimesViewController.swift; sourceTree = "<group>"; };
+		8931834B1BF859CF0088D084 /* HowManyFibonacciViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowManyFibonacciViewController.swift; sourceTree = "<group>"; };
 		8965F3211BDE0FBB000E62E6 /* Prime!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prime!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8965F3241BDE0FBB000E62E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8965F3261BDE0FBB000E62E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				8965F3241BDE0FBB000E62E6 /* AppDelegate.swift */,
 				8965F3261BDE0FBB000E62E6 /* ViewController.swift */,
+				893183491BF855220088D084 /* HowManyPrimesViewController.swift */,
+				8931834B1BF859CF0088D084 /* HowManyFibonacciViewController.swift */,
 				8965F3281BDE0FBB000E62E6 /* Main.storyboard */,
 				8965F32B1BDE0FBB000E62E6 /* Assets.xcassets */,
 				8965F32D1BDE0FBB000E62E6 /* LaunchScreen.storyboard */,
@@ -137,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8965F3271BDE0FBB000E62E6 /* ViewController.swift in Sources */,
+				8931834A1BF855220088D084 /* HowManyPrimesViewController.swift in Sources */,
 				8965F3251BDE0FBB000E62E6 /* AppDelegate.swift in Sources */,
+				8931834C1BF859CF0088D084 /* HowManyFibonacciViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ssE-R1-Xyg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--FindPrimesUpto-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prime_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="FindPrimesUpto" id="BYZ-38-t0r" customClass="ViewController" customModule="Prime_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="numbers-shutterstock" translatesAutoresizingMaskIntoConstraints="NO" id="E2B-gV-ihw">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-xz-eNa">
-                                <rect key="frame" x="20" y="120" width="560" height="460"/>
+                                <rect key="frame" x="20" y="120" width="560" height="411"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -36,8 +36,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGo-JE-rvc">
-                                <rect key="frame" x="175" y="28" width="251" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGo-JE-rvc">
+                                <rect key="frame" x="175" y="30" width="250" height="48"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -71,6 +71,7 @@
                             <constraint firstItem="qJf-xz-eNa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sAy-3a-7H3"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Upto:" id="gtZ-A2-rAn"/>
                     <connections>
                         <outlet property="CalculateButtonItem" destination="yGo-JE-rvc" id="yDI-Wm-a44"/>
                         <outlet property="MainTextView" destination="qJf-xz-eNa" id="CKQ-xL-40h"/>
@@ -79,7 +80,187 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="683"/>
+            <point key="canvasLocation" x="1386" y="683"/>
+        </scene>
+        <!--FindThisManyPrimes-->
+        <scene sceneID="Ccg-Ge-jX3">
+            <objects>
+                <viewController storyboardIdentifier="HowManyPrimesViewController" title="FindThisManyPrimes" id="gal-7s-KxG" customClass="HowManyPrimesViewController" customModule="Prime_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dnh-Xv-rTY"/>
+                        <viewControllerLayoutGuide type="bottom" id="ILz-CJ-Kz3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qpn-xv-gjR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-n7-OdH">
+                                <rect key="frame" x="252" y="78" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="9NK-ud-2DD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3t-cL-fPG">
+                                <rect key="frame" x="142" y="30" width="317" height="48"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="lx1-q5-W57"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Find This Many Primes:">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="CalulateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWi-b7-GmT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="numbers-shutterstock" translatesAutoresizingMaskIntoConstraints="NO" id="WNv-El-CC5">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Zoe-hZ-Eqt">
+                                <rect key="frame" x="20" y="120" width="560" height="411"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buL-3Z-OfE">
+                                <rect key="frame" x="142" y="30" width="317" height="48"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317" id="UIv-E1-6dT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="myG-vq-fu1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Find This Many Primes:">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="CalulateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXr-Gi-v9D"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngJ-LV-PeD">
+                                <rect key="frame" x="252" y="78" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="drB-qS-szZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w3t-cL-fPG" firstAttribute="centerX" secondItem="Pcq-n7-OdH" secondAttribute="centerX" id="0Sp-Lo-dqv"/>
+                            <constraint firstItem="ngJ-LV-PeD" firstAttribute="leading" secondItem="Pcq-n7-OdH" secondAttribute="leading" id="5P0-nG-DEy"/>
+                            <constraint firstItem="Zoe-hZ-Eqt" firstAttribute="leading" secondItem="Qpn-xv-gjR" secondAttribute="leadingMargin" id="8F1-f2-KWW"/>
+                            <constraint firstItem="Zoe-hZ-Eqt" firstAttribute="top" secondItem="Pcq-n7-OdH" secondAttribute="bottom" constant="12" id="9Fr-t7-orM"/>
+                            <constraint firstItem="buL-3Z-OfE" firstAttribute="trailing" secondItem="w3t-cL-fPG" secondAttribute="trailing" id="C7y-e7-A2d"/>
+                            <constraint firstItem="ILz-CJ-Kz3" firstAttribute="top" secondItem="Zoe-hZ-Eqt" secondAttribute="bottom" constant="20" id="CBd-im-cuB"/>
+                            <constraint firstItem="buL-3Z-OfE" firstAttribute="baseline" secondItem="w3t-cL-fPG" secondAttribute="baseline" id="Het-qN-u6F"/>
+                            <constraint firstItem="buL-3Z-OfE" firstAttribute="leading" secondItem="w3t-cL-fPG" secondAttribute="leading" id="Kol-FA-jW5"/>
+                            <constraint firstItem="ngJ-LV-PeD" firstAttribute="centerX" secondItem="Zoe-hZ-Eqt" secondAttribute="centerX" id="cap-Tk-cbM"/>
+                            <constraint firstItem="WNv-El-CC5" firstAttribute="bottom" secondItem="ILz-CJ-Kz3" secondAttribute="top" id="cpE-ga-OTP"/>
+                            <constraint firstItem="w3t-cL-fPG" firstAttribute="top" secondItem="Dnh-Xv-rTY" secondAttribute="bottom" constant="10" id="gk7-qT-4gV"/>
+                            <constraint firstAttribute="trailing" secondItem="WNv-El-CC5" secondAttribute="trailing" id="iMl-ym-GfM"/>
+                            <constraint firstItem="ngJ-LV-PeD" firstAttribute="baseline" secondItem="Pcq-n7-OdH" secondAttribute="baseline" id="nw0-j5-Z8C"/>
+                            <constraint firstItem="WNv-El-CC5" firstAttribute="leading" secondItem="Qpn-xv-gjR" secondAttribute="leading" id="qgS-F0-7eC"/>
+                            <constraint firstItem="WNv-El-CC5" firstAttribute="centerX" secondItem="w3t-cL-fPG" secondAttribute="centerX" id="rHw-xC-KLQ"/>
+                            <constraint firstItem="WNv-El-CC5" firstAttribute="top" secondItem="Dnh-Xv-rTY" secondAttribute="bottom" id="u8J-nZ-wrc"/>
+                            <constraint firstItem="Pcq-n7-OdH" firstAttribute="top" secondItem="w3t-cL-fPG" secondAttribute="bottom" id="vaC-KI-rxs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First:" id="D2T-qn-10F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIW-gL-QCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="1337"/>
+        </scene>
+        <!--Fibonacci-->
+        <scene sceneID="DpN-Rc-fNy">
+            <objects>
+                <viewController storyboardIdentifier="HowManyFibonacciViewController" id="Tab-qf-v5T" customClass="HowManyFibonacciViewController" customModule="Prime_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oc3-EY-6hB"/>
+                        <viewControllerLayoutGuide type="bottom" id="YDe-K6-Vlp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bsf-ef-Iko">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="numbers-shutterstock" translatesAutoresizingMaskIntoConstraints="NO" id="EfW-o0-lpn">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GKs-V4-3o9">
+                                <rect key="frame" x="20" y="120" width="560" height="411"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nqu-gY-DBw">
+                                <rect key="frame" x="252" y="78" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="46A-PI-qIS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ws-7A-XOS">
+                                <rect key="frame" x="142" y="30" width="317" height="48"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317" id="BCE-pv-Ap4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="at8-ds-gpN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="How Many Fibonacci?:">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="CalulateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZc-6C-J3f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EfW-o0-lpn" secondAttribute="trailing" id="10Z-tK-an5"/>
+                            <constraint firstItem="8Ws-7A-XOS" firstAttribute="top" secondItem="Oc3-EY-6hB" secondAttribute="bottom" constant="10" id="2hV-7J-YnP"/>
+                            <constraint firstItem="GKs-V4-3o9" firstAttribute="centerX" secondItem="EfW-o0-lpn" secondAttribute="centerX" id="9qh-lP-UPb"/>
+                            <constraint firstItem="Nqu-gY-DBw" firstAttribute="top" secondItem="8Ws-7A-XOS" secondAttribute="bottom" id="KZT-fj-b7Z"/>
+                            <constraint firstItem="GKs-V4-3o9" firstAttribute="top" secondItem="Nqu-gY-DBw" secondAttribute="bottom" constant="12" id="MSg-c3-yMm"/>
+                            <constraint firstItem="EfW-o0-lpn" firstAttribute="leading" secondItem="bsf-ef-Iko" secondAttribute="leading" id="Pb8-Hp-Srj"/>
+                            <constraint firstItem="EfW-o0-lpn" firstAttribute="bottom" secondItem="YDe-K6-Vlp" secondAttribute="top" id="ZXf-6D-pPS"/>
+                            <constraint firstItem="EfW-o0-lpn" firstAttribute="top" secondItem="Oc3-EY-6hB" secondAttribute="bottom" id="bRs-U3-z3M"/>
+                            <constraint firstItem="GKs-V4-3o9" firstAttribute="leading" secondItem="bsf-ef-Iko" secondAttribute="leadingMargin" id="dEQ-wN-e4w"/>
+                            <constraint firstItem="8Ws-7A-XOS" firstAttribute="centerX" secondItem="Nqu-gY-DBw" secondAttribute="centerX" id="jCp-f3-I7P"/>
+                            <constraint firstItem="YDe-K6-Vlp" firstAttribute="top" secondItem="GKs-V4-3o9" secondAttribute="bottom" constant="20" id="lCl-Ip-YQV"/>
+                            <constraint firstItem="Nqu-gY-DBw" firstAttribute="centerX" secondItem="GKs-V4-3o9" secondAttribute="centerX" id="mFv-ki-Ngg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fibonacci" id="4Zb-a7-hLz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWr-un-TKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="1994"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BmI-6m-v9G">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ssE-R1-Xyg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bSx-nW-A8L">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="B9w-Rh-A7r"/>
+                        <segue destination="gal-7s-KxG" kind="relationship" relationship="viewControllers" id="aPT-iM-8k5"/>
+                        <segue destination="Tab-qf-v5T" kind="relationship" relationship="viewControllers" id="2Cr-Ja-yZX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAz-fo-1gC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="1337"/>
         </scene>
     </scenes>
     <resources>
