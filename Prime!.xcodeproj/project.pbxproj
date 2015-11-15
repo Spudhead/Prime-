@@ -10,7 +10,7 @@
 		8931834A1BF855220088D084 /* HowManyPrimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893183491BF855220088D084 /* HowManyPrimesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8931834C1BF859CF0088D084 /* HowManyFibonacciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931834B1BF859CF0088D084 /* HowManyFibonacciViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		8965F3251BDE0FBB000E62E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F3241BDE0FBB000E62E6 /* AppDelegate.swift */; };
-		8965F3271BDE0FBB000E62E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F3261BDE0FBB000E62E6 /* ViewController.swift */; };
+		8965F3271BDE0FBB000E62E6 /* FindPrimesUpto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965F3261BDE0FBB000E62E6 /* FindPrimesUpto.swift */; };
 		8965F32A1BDE0FBB000E62E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8965F3281BDE0FBB000E62E6 /* Main.storyboard */; };
 		8965F32C1BDE0FBB000E62E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8965F32B1BDE0FBB000E62E6 /* Assets.xcassets */; };
 		8965F32F1BDE0FBB000E62E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8965F32D1BDE0FBB000E62E6 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		8931834B1BF859CF0088D084 /* HowManyFibonacciViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowManyFibonacciViewController.swift; sourceTree = "<group>"; };
 		8965F3211BDE0FBB000E62E6 /* Prime!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prime!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8965F3241BDE0FBB000E62E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8965F3261BDE0FBB000E62E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8965F3261BDE0FBB000E62E6 /* FindPrimesUpto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPrimesUpto.swift; sourceTree = "<group>"; };
 		8965F3291BDE0FBB000E62E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8965F32B1BDE0FBB000E62E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8965F32E1BDE0FBB000E62E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				8965F3241BDE0FBB000E62E6 /* AppDelegate.swift */,
-				8965F3261BDE0FBB000E62E6 /* ViewController.swift */,
+				8965F3261BDE0FBB000E62E6 /* FindPrimesUpto.swift */,
 				893183491BF855220088D084 /* HowManyPrimesViewController.swift */,
 				8931834B1BF859CF0088D084 /* HowManyFibonacciViewController.swift */,
 				8965F3281BDE0FBB000E62E6 /* Main.storyboard */,
@@ -142,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8965F3271BDE0FBB000E62E6 /* ViewController.swift in Sources */,
+				8965F3271BDE0FBB000E62E6 /* FindPrimesUpto.swift in Sources */,
 				8931834A1BF855220088D084 /* HowManyPrimesViewController.swift in Sources */,
 				8965F3251BDE0FBB000E62E6 /* AppDelegate.swift in Sources */,
 				8931834C1BF859CF0088D084 /* HowManyFibonacciViewController.swift in Sources */,

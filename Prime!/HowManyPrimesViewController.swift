@@ -9,7 +9,10 @@
 import UIKit
 
 class HowManyPrimesViewController: UIViewController {
-
+    
+    @IBOutlet weak var MainTextView: UITextView!
+    @IBOutlet weak var RangeTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,9 @@ class HowManyPrimesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func Button(sender: AnyObject) {
+        MainTextView.text = "Test This Many primes"
+    }
 
     /*
     // MARK: - Navigation

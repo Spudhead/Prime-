@@ -137,6 +137,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="Button:" destination="gal-7s-KxG" eventType="touchUpInside" id="mk4-zN-o1t"/>
                                     <action selector="CalulateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXr-Gi-v9D"/>
                                 </connections>
                             </button>
@@ -171,6 +172,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First:" id="D2T-qn-10F"/>
+                    <connections>
+                        <outlet property="MainTextView" destination="Zoe-hZ-Eqt" id="p1W-FF-0cr"/>
+                        <outlet property="RangeTextField" destination="ngJ-LV-PeD" id="KUn-hi-6wp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XIW-gL-QCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,12 +196,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="numbers-shutterstock" translatesAutoresizingMaskIntoConstraints="NO" id="EfW-o0-lpn">
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GKs-V4-3o9">
-                                <rect key="frame" x="20" y="120" width="560" height="411"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nqu-gY-DBw">
                                 <rect key="frame" x="252" y="78" width="97" height="30"/>
                                 <constraints>
@@ -217,9 +216,16 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="Button:" destination="Tab-qf-v5T" eventType="touchUpInside" id="sgx-xY-ifd"/>
                                     <action selector="CalulateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZc-6C-J3f"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="onDrag" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="GKs-V4-3o9">
+                                <rect key="frame" x="20" y="120" width="560" height="411"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -238,6 +244,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Fibonacci" id="4Zb-a7-hLz"/>
+                    <connections>
+                        <outlet property="MainTextView" destination="GKs-V4-3o9" id="lr3-7e-bZC"/>
+                        <outlet property="RangeTextField" destination="Nqu-gY-DBw" id="UuV-vv-AdU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWr-un-TKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

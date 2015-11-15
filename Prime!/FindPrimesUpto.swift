@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FindPrimesUpto.swift
 //  Prime!
 //
 //  Created by Glenn Hancock on 10/26/15.
