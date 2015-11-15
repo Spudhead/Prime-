@@ -26,18 +26,23 @@ class HowManyFibonacciViewController: UIViewController {
     
     @IBAction func Button(sender: AnyObject) {
         
-        let range = Int(RangeTextField.text!)
+        if let range = Int(RangeTextField.text!) {
         
             var number1 = 1
             var number2 = 1
             
-            for _ in 1 ... range! / 2 {
+            MainTextView.text = ""
+            
+            for _ in 1 ... range / 2 {
                 
                 number1 += number2
                 number2 += number1
                 MainTextView.text = MainTextView.text + "\(number1) \(number2) "
                 
             }
+        } else {
+            MainTextView.text = "Please enter a positive number"
+          }
         }
         
      }
