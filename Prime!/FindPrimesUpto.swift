@@ -24,7 +24,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func CalulateButton(sender: UIButton) {
+    @IBAction func DonePressed(sender: AnyObject) {
+     
+        self.resignFirstResponder()
         
         var number = 1
         if let range = Int(rangeTextField.text!) {
@@ -54,4 +56,6 @@ class ViewController: UIViewController {
             MainTextView.text = "Please enter a positive number."
         }
     }
+    
+    
 }

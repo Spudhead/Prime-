@@ -25,17 +25,36 @@ class HowManyPrimesViewController: UIViewController {
     }
     
     @IBAction func Button(sender: AnyObject) {
-        MainTextView.text = "Test This Many primes"
+
+        var number = 1
+        var count = 1
+ 
+        if let range = Int(RangeTextField.text!) {
+ 
+            MainTextView.text = ""
+            while count <= (range) {
+                number++
+                
+                //set the flag to true initially
+                var prime = true
+                
+                for var i = 2; i <= number / 2 ; i += 1 {
+                    
+                    //even division of a number thats not 1 or the number itself = not a prime number
+                    if number % i == 0 {
+                        prime = false
+                        break
+                    }
+                }
+                
+                if prime == true {
+                    print(number, terminator: " ")
+                    MainTextView.text = MainTextView.text + "\(number) "
+                    count++
+                }
+            }
+        } else {
+            MainTextView.text = "Please enter a positive number."
+        }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

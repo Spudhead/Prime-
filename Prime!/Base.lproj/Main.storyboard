@@ -28,52 +28,48 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Primes Up To:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9U-YP-qaR">
+                                <rect key="frame" x="204" y="42" width="193" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.46765745389051422" green="0.48989898989898994" blue="0.47229261656270793" alpha="0.39000000000000001" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifS-I2-yc8">
                                 <rect key="frame" x="252" y="78" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="ien-uR-E88"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGo-JE-rvc">
-                                <rect key="frame" x="175" y="30" width="250" height="48"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="kgN-ee-c0H"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Find Primes Upto:">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="alert" returnKeyType="go"/>
                                 <connections>
-                                    <action selector="CalulateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6O-DB-JDp"/>
+                                    <action selector="DonePressed:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="MKz-SJ-5xD"/>
                                 </connections>
-                            </button>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="C9U-YP-qaR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A3N-eK-TbV"/>
                             <constraint firstItem="E2B-gV-ihw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BXI-CB-CLR"/>
                             <constraint firstAttribute="trailing" secondItem="E2B-gV-ihw" secondAttribute="trailing" id="Buf-t5-q1B"/>
                             <constraint firstItem="qJf-xz-eNa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="120" id="JdD-TC-7Cu"/>
                             <constraint firstAttribute="leadingMargin" secondItem="qJf-xz-eNa" secondAttribute="leading" id="Keb-vC-jKz"/>
-                            <constraint firstItem="ifS-I2-yc8" firstAttribute="top" secondItem="yGo-JE-rvc" secondAttribute="bottom" id="PWK-jT-U7u"/>
-                            <constraint firstItem="yGo-JE-rvc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="ZpV-lm-AnC"/>
                             <constraint firstItem="ifS-I2-yc8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bWy-zU-Utg"/>
+                            <constraint firstItem="ifS-I2-yc8" firstAttribute="top" secondItem="C9U-YP-qaR" secondAttribute="bottom" constant="8" id="cHj-Rw-wyw"/>
                             <constraint firstAttribute="trailing" secondItem="E2B-gV-ihw" secondAttribute="trailing" id="dI1-g6-hlp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qJf-xz-eNa" secondAttribute="bottom" constant="20" id="hC7-a5-2KA"/>
-                            <constraint firstItem="yGo-JE-rvc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jWh-Z4-rQd"/>
                             <constraint firstItem="E2B-gV-ihw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="lXX-yF-Nsl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qJf-xz-eNa" secondAttribute="trailing" id="pZo-aV-bu8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E2B-gV-ihw" secondAttribute="bottom" id="qZg-Ua-4WP"/>
                             <constraint firstItem="qJf-xz-eNa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sAy-3a-7H3"/>
+                            <constraint firstItem="E2B-gV-ihw" firstAttribute="top" secondItem="C9U-YP-qaR" secondAttribute="bottom" constant="-50" id="zR1-2W-dXA"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upto:" id="gtZ-A2-rAn"/>
                     <connections>
-                        <outlet property="CalculateButtonItem" destination="yGo-JE-rvc" id="yDI-Wm-a44"/>
                         <outlet property="MainTextView" destination="qJf-xz-eNa" id="CKQ-xL-40h"/>
                         <outlet property="rangeTextField" destination="ifS-I2-yc8" id="Zq3-Mq-F1p"/>
                     </connections>
@@ -125,11 +121,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngJ-LV-PeD">
+                                <rect key="frame" x="252" y="78" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="drB-qS-szZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buL-3Z-OfE">
-                                <rect key="frame" x="142" y="30" width="317" height="48"/>
+                                <rect key="frame" x="130" y="30" width="340" height="48"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="317" id="UIv-E1-6dT"/>
+                                    <constraint firstAttribute="width" constant="340" id="UIv-E1-6dT"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="myG-vq-fu1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -141,14 +145,6 @@
                                     <action selector="CalulateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uXr-Gi-v9D"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngJ-LV-PeD">
-                                <rect key="frame" x="252" y="78" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="drB-qS-szZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -156,10 +152,10 @@
                             <constraint firstItem="ngJ-LV-PeD" firstAttribute="leading" secondItem="Pcq-n7-OdH" secondAttribute="leading" id="5P0-nG-DEy"/>
                             <constraint firstItem="Zoe-hZ-Eqt" firstAttribute="leading" secondItem="Qpn-xv-gjR" secondAttribute="leadingMargin" id="8F1-f2-KWW"/>
                             <constraint firstItem="Zoe-hZ-Eqt" firstAttribute="top" secondItem="Pcq-n7-OdH" secondAttribute="bottom" constant="12" id="9Fr-t7-orM"/>
-                            <constraint firstItem="buL-3Z-OfE" firstAttribute="trailing" secondItem="w3t-cL-fPG" secondAttribute="trailing" id="C7y-e7-A2d"/>
+                            <constraint firstItem="buL-3Z-OfE" firstAttribute="trailing" secondItem="w3t-cL-fPG" secondAttribute="trailing" constant="11" id="C7y-e7-A2d"/>
                             <constraint firstItem="ILz-CJ-Kz3" firstAttribute="top" secondItem="Zoe-hZ-Eqt" secondAttribute="bottom" constant="20" id="CBd-im-cuB"/>
                             <constraint firstItem="buL-3Z-OfE" firstAttribute="baseline" secondItem="w3t-cL-fPG" secondAttribute="baseline" id="Het-qN-u6F"/>
-                            <constraint firstItem="buL-3Z-OfE" firstAttribute="leading" secondItem="w3t-cL-fPG" secondAttribute="leading" id="Kol-FA-jW5"/>
+                            <constraint firstItem="buL-3Z-OfE" firstAttribute="leading" secondItem="w3t-cL-fPG" secondAttribute="leading" constant="-12" id="Kol-FA-jW5"/>
                             <constraint firstItem="ngJ-LV-PeD" firstAttribute="centerX" secondItem="Zoe-hZ-Eqt" secondAttribute="centerX" id="cap-Tk-cbM"/>
                             <constraint firstItem="WNv-El-CC5" firstAttribute="bottom" secondItem="ILz-CJ-Kz3" secondAttribute="top" id="cpE-ga-OTP"/>
                             <constraint firstItem="w3t-cL-fPG" firstAttribute="top" secondItem="Dnh-Xv-rTY" secondAttribute="bottom" constant="10" id="gk7-qT-4gV"/>
@@ -274,6 +270,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="numbers-shutterstock" width="833" height="833"/>
+        <image name="numbers-shutterstock" width="1300" height="1300"/>
     </resources>
 </document>
